@@ -28,6 +28,8 @@ public:
     int peek();
     // Clear the stack
     void clear();
+    // Print the stack contents
+    void print_stack();
 private:
     // Check if stack is full (avoid overflow)
     bool is_full();

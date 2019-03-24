@@ -17,6 +17,7 @@ void Stack::push(int d){
         // Increment top of stack then store value at new position
         array[++top_of_stack] = d;
     }
+    print_stack();
 }
 
 // Remove an item from the stack
@@ -31,6 +32,7 @@ void Stack::pop(){
         // Clear element at top of stack then decrement top_of_stack
         array[top_of_stack--] = 0;
     }
+    print_stack();
 }
 
 // Look at top of stack
@@ -50,6 +52,17 @@ int Stack::peek(){
 void Stack::clear(){
     while(!is_empty()){
         pop();
+    }
+}
+
+// Print the stack contents
+void Stack::print_stack(){
+    cout << "Stack contents" << endl;
+    cout << "|\t\t|" << endl;
+    for(int i = top_of_stack; i >= 0; i++){
+        cout << "|--------|" << endl;
+        cout << "|\t" << array[i] << "\t|" << endl;
+        cout << "|--------|" << endl;
     }
 }
 
