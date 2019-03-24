@@ -1,4 +1,4 @@
-// This program implements a basic singly linked list in C++
+// This program implements a fairly robust singly linked list in C++
 // By: Nick from CoffeeBeforeArch
 
 #include "interface.h"
