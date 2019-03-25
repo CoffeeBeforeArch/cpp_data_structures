@@ -44,7 +44,7 @@ int Stack::peek(){
     // Check if stack is empty
     // If empty, exit with failure
     // Otherwise return top of stack value
-    if(!is_empty()){
+    if(is_empty()){
         cout << "Error: Stack Empty!";
         exit(EXIT_FAILURE);
     }else{
