@@ -2,6 +2,7 @@
 // By: Nick from CoffeeBeforeArch
 
 #include <stdlib.h>
+#include "../common/common.h"
 
 // Swaps two values in memory
 // Takes locations "a" and "b" as arguments
@@ -28,8 +29,11 @@ void insertion_sort(int *array, int n){
             }
         }
         
-        // Swap for the min element 
+        // Swap for the min element
+        cout << "Swapping index " << i << " with index " << min_key << endl;
+        print_swap(array, i, min_key, n);
         swap(&array[i], &array[min_key]);
+        print_array(array, n);
     }
 }
 

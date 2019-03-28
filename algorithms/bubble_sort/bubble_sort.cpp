@@ -2,6 +2,7 @@
 // By: Nick from CoffeeBeforeArch
 
 #include <stdlib.h>
+#include "../common/common.h"
 
 // Swaps to elements in memory
 // Takes memory locations a and b as arguments
@@ -20,7 +21,9 @@ void bubble_sort(int *array, int n){
         // Remove "i" sorted elements each iteration 
         for(int j = 0; j < n - i - 1; j++){
             if(array[j] > array[j + 1]){
+                print_swap(array, j, j+1, n);
                 swap(&array[j], &array[j + 1]);
+                print_array(array, n);
             }
         }
     }

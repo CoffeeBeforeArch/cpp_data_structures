@@ -2,6 +2,7 @@
 // By: Nick from CoffeeBeforeArch
 
 #include <stdlib.h>
+#include "../common/common.h"
 
 // Performs insertion sort
 // Takes an array and its length as arguments
@@ -10,6 +11,7 @@ void insertion_sort(int *array, int n){
     // into the list (first element is implicitly sorted)
     int temp;
     for(int i = 1; i < n; i++){
+        print_swap(array, i, i, n);
         // Save the ith element because shifting overwrites it
         temp = array[i];
 
@@ -24,6 +26,7 @@ void insertion_sort(int *array, int n){
 
         // ... and insert the value at that spot
         array[j + 1] = temp;
+        print_array(array, n);
     }
 }
 
