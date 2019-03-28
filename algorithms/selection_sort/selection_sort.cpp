@@ -1,11 +1,6 @@
 // This program implements selection sort in C++
 // By: Nick from CoffeeBeforeArch
 
-#include <iostream>
-#include <stdlib.h>
-
-using namespace std;
-
 void swap(int *a, int *b){
     int temp = *a;
     *a = *b;
