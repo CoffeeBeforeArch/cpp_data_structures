@@ -3,6 +3,8 @@
 
 #include <stdlib.h>
 
+// Swaps two values in memory
+// Takes locations "a" and "b" as arguments
 void swap(int *a, int *b){
     int temp = *a;
     *a = *b;
