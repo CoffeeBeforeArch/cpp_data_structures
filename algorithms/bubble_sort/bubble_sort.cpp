@@ -19,9 +19,10 @@ void bubble_sort(int *array, int n){
     for(int i = 0; i < n - 1; i++){
         // Propagate largest remaining element to the top
         // Remove "i" sorted elements each iteration 
-        for(int j = 0; j < n - i - 1; j++){
+        for(int j = 0; j < n - 1 - i; j++){
             if(array[j] > array[j + 1]){
-                print_swap(array, j, j+1, n);
+                cout << "Swapping index " << j << " and " << j + 1 << endl;
+                print_swap(array, j, j + 1, n);
                 swap(&array[j], &array[j + 1]);
                 print_array(array, n);
             }

@@ -11,7 +11,9 @@ void insertion_sort(int *array, int n){
     // into the list (first element is implicitly sorted)
     int temp;
     for(int i = 1; i < n; i++){
+        cout << "Inserting index " << i << endl;
         print_swap(array, i, i, n);
+
         // Save the ith element because shifting overwrites it
         temp = array[i];
 
@@ -25,6 +27,7 @@ void insertion_sort(int *array, int n){
         }
 
         // ... and insert the value at that spot
+        cout << "Inserting at position " << j + 1 << endl << endl;
         array[j + 1] = temp;
         print_array(array, n);
     }
