@@ -121,7 +121,7 @@ int main(){
     vector<int> vec;
     
     // Initialize a vector with "n" elements
-    unsigned n = 16;
+    unsigned n = 8;
     init_vector(vec, n);
     
     // Print the vectors before sorting
