@@ -104,7 +104,7 @@ void merge_sort(vector<int> &vec, unsigned l, unsigned r){
     cout << "Merge Sort for L = " << l << ", R = " << r << endl;
     // Merge until we are left with a single element
     if(l < r){
-        // Calcualte mid-point of vector
+        // Calculate mid-point of vector
         int mid = (l + r) / 2;
 
         // Sort the sub-vectors
