@@ -23,13 +23,31 @@ struct node{
     }
 };
 
-node *insert_node(node *root, node *new_node){
-    
+class BinaryTree {
+private:
+    node *root;
+
+public:
+    // Simple constructor sets the root to NULL
+    BinaryTree(){
+        root = nullptr;
+    }
+
+    // Simple method for inserting a node
+    void insert_node(node* n, int d);
+};
+
+// Inserts a node with data "d"
+void BinaryTree::insert_node(node *n, int d){
+    // Temp node for swapping
+    node *temp = root;
+
+    // Create a new node
+    node *new_node = new node(d);
+
 }
 
 int main(){
-    // Create the root node
-    node *root = new node(rand() % 100);
     
     return 0;
 }
