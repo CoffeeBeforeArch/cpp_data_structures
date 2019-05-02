@@ -9,6 +9,7 @@ using namespace std;
 
 struct node{
     // Pointers to left and right nodes
+    node *parent;
     node *left;
     node *right;
 
@@ -18,6 +19,7 @@ struct node{
     // Constructor
     node(int d){
         data = d;
+        parent = nullptr;
         left = nullptr;
         right = nullptr;
     }
@@ -38,12 +40,7 @@ public:
 };
 
 // Inserts a node with data "d"
-void BinaryTree::insert_node(node *n, int d){
-    // Temp node for swapping
-    node *temp = root;
-
-    // Create a new node
-    node *new_node = new node(d);
+void BinaryTree::insert_node(node *node, int d){
 
 }
 
