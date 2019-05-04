@@ -1,5 +1,4 @@
 // This program implements a binary tree in C++
-//
 // By: Nick from CoffeeBeforeArch
 
 #include <iostream>
