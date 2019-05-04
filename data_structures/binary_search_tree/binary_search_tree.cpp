@@ -110,6 +110,7 @@ int main(){
         // Insert the node (save the root if it's the first insert)
         bst.root = bst.insert_node(bst.root, data);
     }
+    cout << endl;
 
     // Search for each of the inserted nodes
     for(int i : data_vec){
