@@ -70,6 +70,7 @@ int main(){
         array[i] = rand() % 100;
     }
 
+    // Print out the unsorted array
     for(int i = 0; i < n; i++){
         cout << array[i] << " ";
     }
@@ -78,9 +79,11 @@ int main(){
     // Sort the array using quicksort
     quicksort(array, 0, n-1);
 
+    // Print out the sorted array
     for(int i = 0; i < n; i++){
         cout << array[i] << " ";
     }
     cout << endl;
+
     return 0;
 }
