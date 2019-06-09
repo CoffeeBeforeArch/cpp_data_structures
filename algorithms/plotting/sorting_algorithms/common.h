@@ -195,4 +195,57 @@ void merge_sort(int *a, int left, int right){
     }
 }
 
+// Quick Sort (Two functions)
+// Partition
+// Takes:
+//  a:      Original array of elements being split into sub-arrays
+//  left:   Starting point for sub-array
+//  pivot:  Index of pivot element
+// Returns:
+//  Index of sorted pivot element
+int partition(int *a, int left, int pivot){
+    // Sub-array of "<=" starts before first index (contains nothing)
+    int leq = left - 1;
+
+    // Index of last element to sort into sub-list
+    int high = pivot - 1;
+
+    // Go over all elements in sub-array
+    for(int j = left; j <= high; j++){
+        // Does this element go in the "<=" sub-array?
+        if(a[j] <= a[pivot]){
+            // Move over marker of sub-array
+            leq++;
+
+            // Swap the element into position
+            swap(&a[leq], &a[j]);
+        }
+    }
+
+    // Move the pivot into the correct position between the sub-arrays
+    swap(&a[leq + 1], &a[pivot]);
+
+    // Return the index of sorted pivot
+    return leq + 1;
+}
+
+// Quicksort
+// Takes:
+//  a:      Array of unsorted elements
+//  left:   Start index of sub-array
+//  pivot:  End index of sub-array
+// Returns:
+//  NA
+void quicksort(int *array, int left, int pivot){
+    // Recursively called until trivial sort of single element
+    if(left < pivot){
+        // Partition the array into "<=" and ">" sub-arrays
+        int new_pivot = partition(array, left, pivot);
+
+        // Sort the "<=" sub-array
+        quicksort(array, left, new_pivot - 1);
+        // Sort the ">" sub-array
+        quicksort(array, new_pivot + 1, pivot);
+    }
+}
 
