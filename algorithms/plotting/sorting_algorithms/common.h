@@ -5,6 +5,22 @@
 // For use of rand()
 #include <stdlib.h>
 
+// For high resolution clock 
+#include <chrono>
+
+// For simplicity for clock methods and return types
+using namespace std;
+using namespace std::chrono;
+
+// Time point collection function
+// Takes:
+//  NA
+// Returns:
+//  time_point when called
+high_resolution_clock::time_point get_time(){
+    return high_resolution_clock::now();
+}
+
 // Initializes an array "a" of size "N"
 // Takes:
 //  a:  Pointer to the array
