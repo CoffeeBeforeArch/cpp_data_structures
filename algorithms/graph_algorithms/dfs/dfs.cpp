@@ -49,6 +49,7 @@ void Graph::DFS_helper(int s, bool *visited){
     for(auto i = adj[s].begin(); i != adj[s].end(); i++){
         // If not visited, travel through that vertex
         if(!visited[*i]){
+            cout << "Going to vertex " << *i << " from vertex " << s << endl;
             DFS_helper(*i, visited);
         }
     }
