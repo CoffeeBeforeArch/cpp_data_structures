@@ -28,7 +28,7 @@ public:
 
 // Constructer with number of vertices
 Graph::Graph(int v){
-    // Set number of verticest
+    // Set number of vertices
     V = v;
 
     // Create new adjacency list
@@ -100,7 +100,7 @@ int main(){
     g.addEdge(5, 3);
     g.addEdge(5, 4);
 
-    // Perform BFS and print result
+    // Perform DFS and print result
     g.DFS(0);
     
     return 0;
