@@ -32,3 +32,9 @@ C++ Compiler: g++
 | <a href=https://youtu.be/t-PEBGkbojw>C++ Data Structures: Insertion Sort</a> | Algorithms, Insertion Sort | <a href=https://github.com/CoffeeBeforeArch/cpp_data_structures/tree/master/algorithms/insertion_sort/insertion_sort.cpp>insertion_sort.cpp</a> |
 | <a href=https://youtu.be/302ALqsQc24>C++ Data Structures: Merge Sort</a> | Algorithms, Merge Sort, Divide and Conquer | <a href=https://github.com/CoffeeBeforeArch/cpp_data_structures/blob/master/algorithms/merge_sort/merge_sort.cpp>merge_sort.cpp</a> |
 | <a href=https://youtu.be/uOd-OcJVHa0>C++ Data Structures: Quick Sort</a> | Algorithms, Quick Sort, Divide and Conquer | <a href=https://github.com/CoffeeBeforeArch/cpp_data_structures/blob/master/algorithms/sorting_algorithms/quick_sort/quick_sort.cpp>quick_sort.cpp</a> |
+
+# Graph Algorithms
+| Video | Concepts | Files |
+| ----- | -------- | ----- |
+| <a href=https://youtu.be/v78tWnjklio>C++ Data Structures: Breadth First Search</a> | BFS, Graph Algorithms | <a href=https://github.com/CoffeeBeforeArch/cpp_data_structures/tree/master/algorithms/graph_algorithms/bfs/bfs.cpp>bfs.cpp</a> |
+| <a href=https://youtu.be/mQZjx31C6aA>C++ Data Structures: Depth First Search</a> | DFS, Graph Algorithms | <a href=https://github.com/CoffeeBeforeArch/cpp_data_structures/tree/master/algorithms/graph_algorithms/dfs/dfs.cpp>dfs.cpp</a> |
