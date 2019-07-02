@@ -60,7 +60,7 @@ void maxHeap::insert(int k){
     int i = size - 1;
     heap[i] = k;
 
-    // Fix the min heap property
+    // Fix the max heap property
     // Moves the element up until i >= parent or root
     while(i != 0 && heap[parent(i)] < heap[i]){
         swap(heap[i], heap[parent(i)]);
