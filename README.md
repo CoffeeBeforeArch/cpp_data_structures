@@ -14,7 +14,7 @@ Text Editor: VIM
 C++ Compiler: g++
 
 
-## Concepts covered in C++ Crash Course
+## Concepts covered in C++ Data Structures
 # Data Structures
 | Video | Concepts | Files |
 | ----- | -------- | ----- |
