@@ -146,5 +146,6 @@ int main(){
     g.addEdge(8, 6, 6);
 
     g.shortestPath(0);
+
     return 0;
 }
