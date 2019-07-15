@@ -96,46 +96,32 @@ int main(){
     g.addEdge(0, 7, 8);
     
     // Add node 1
-    g.addEdge(1, 0, 4);
     g.addEdge(1, 2, 8);
     g.addEdge(1, 7, 11);
     
     // Add node 2
-    g.addEdge(2, 1, 8);
     g.addEdge(2, 8, 2);
     g.addEdge(2, 5, 4);
     g.addEdge(2, 3, 7);
 
     // Add node 3
-    g.addEdge(3, 2, 7);
     g.addEdge(3, 5, 14);
     g.addEdge(3, 4, 9);
 
     // Add node 4
-    g.addEdge(4, 3, 9);
     g.addEdge(4, 5, 10);
     
     // Add node 5
     g.addEdge(5, 6, 2);
-    g.addEdge(5, 2, 4);
-    g.addEdge(5, 3, 14);
-    g.addEdge(5, 4, 10);
     
     // Add node 6
     g.addEdge(6, 7, 1);
     g.addEdge(6, 8, 6);
-    g.addEdge(6, 5, 2);
 
     // Add node 7
-    g.addEdge(7, 0, 8);
-    g.addEdge(7, 1, 11);
     g.addEdge(7, 8, 7);
-    g.addEdge(7, 6, 1);
 
     // Add node 8
-    g.addEdge(8, 2, 2);
-    g.addEdge(8, 7, 7);
-    g.addEdge(8, 6, 6);
 
     g.shortestPath(0);
     return 0;
