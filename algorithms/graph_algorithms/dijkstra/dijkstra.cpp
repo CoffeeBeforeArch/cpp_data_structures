@@ -125,7 +125,6 @@ int main(){
     
     // Add node 5
     g.addEdge(5, 6, 2);
-    g.addEdge(5, 2, 4);
     g.addEdge(5, 3, 14);
     g.addEdge(5, 4, 10);
     
